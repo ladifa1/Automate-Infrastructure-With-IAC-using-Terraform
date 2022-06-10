@@ -48,10 +48,26 @@ variable "enviroment" {
   description = "Enviroment"
 }
 
-variable "ami" {
+variable "ami-bastion" {
   type        = string
-  description = "AMI ID for the launch template"
+  description = "AMI ID for the bastion launch template"
 }
+
+variable "ami-nginx" {
+  type        = string
+  description = "AMI ID for the Nginx launch template"
+}
+
+variable "ami-sonar" {
+  type        = string
+  description = "AMI ID for the sonarqube launch template"
+}
+
+variable "ami-web" {
+  type        = string
+  description = "AMI ID for the web launch template"
+}
+
 
 variable "keypair" {
   type        = string
