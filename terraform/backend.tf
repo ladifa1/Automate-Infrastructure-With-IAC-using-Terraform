@@ -10,7 +10,7 @@
 
 terraform {
   backend "remote" {
-    organization = "programo"
+    organization = "Ladifa"
 
     workspaces {
       name = "terraform-cloud"
