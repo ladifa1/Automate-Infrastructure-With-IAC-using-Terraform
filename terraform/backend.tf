@@ -7,3 +7,13 @@
 #     encrypt        = true
 #   }
 # }
+
+terraform {
+  backend "remote" {
+    organization = "ladifa"
+
+    workspaces {
+      name = "terraform-cloud"
+    }
+  }
+}
